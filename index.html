@@ -115,18 +115,35 @@
 <body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
 <!-- TopNavBar -->
 <header class="bg-background/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-sm border-b border-glass-stroke">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<a class="font-display-xl-mobile text-headline-md text-primary uppercase tracking-tighter" href="#">Pedro Cardenas Promotions</a>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#services">Servicios</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#gallery">Clientes</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#case-studies">Web</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#contact">Contacto</a>
-</nav>
-<a class="hidden md:inline-flex items-center justify-center flame-bg text-white font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:scale-105 transition-transform duration-200 hover-glow" href="#contact">Get a Quote</a>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <!-- Brand Title -->
+    <a class="font-display-xl-mobile text-headline-md text-sky-400 uppercase tracking-tighter" href="#">Pedro Cardenas Promotions</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-gutter items-center">
+      <a class="text-sky-400 hover:text-white transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#services">Servicios</a>
+      <a class="text-sky-400 hover:text-white transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#gallery">Clientes</a>
+      <a class="text-sky-400 hover:text-white transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#case-studies">Web</a>
+      <a class="text-sky-400 hover:text-white transition-colors font-body-md text-body-md hover:scale-105 transition-transform duration-200" href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <a class="hidden md:inline-flex items-center justify-center flame-bg text-white font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:scale-105 transition-transform duration-200 hover-glow" href="#contact">Get a Quote</a>
+
+    <!-- Mobile Hamburger Button -->
+    <button id="mobile-menu-btn" class="md:hidden text-sky-400 p-2 focus:outline-none" aria-label="Toggle menu">
+      <span id="menu-icon" class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-background/95 border-b border-glass-stroke backdrop-blur-xl px-margin-mobile py-6 flex flex-col gap-4">
+  <a class="mobile-nav-link block text-sky-400 hover:text-white text-lg font-headline-md py-2 border-b border-glass-stroke/50" href="#services">Servicios</a>
+  <a class="mobile-nav-link block text-sky-400 hover:text-white text-lg font-headline-md py-2 border-b border-glass-stroke/50" href="#gallery">Clientes</a>
+  <a class="mobile-nav-link block text-sky-400 hover:text-white text-lg font-headline-md py-2 border-b border-glass-stroke/50" href="#case-studies">Web</a>
+  <a class="mobile-nav-link block text-sky-400 hover:text-white text-lg font-headline-md py-2 border-b border-glass-stroke/50" href="#contact">Contacto</a>
+  <a class="mobile-nav-link block text-center flame-bg text-white font-label-bold py-3 rounded-DEFAULT mt-2 shadow-lg shadow-primary/20" href="#contact">Get a Quote</a>
 </div>
 </header>
 <main class="pt-24 md:pt-32">
@@ -136,8 +153,8 @@
 <div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-background z-10"></div>
 <img alt="" class="w-full h-full object-cover opacity-30 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCueSG-Rg-AvnB5jfKoVKl-xY4yP6UIvnqNRYl8dZAmohHp2HPualBHoQcEhavJLLiNydlzxLwZxWCF-hq3gNgyhIvdgk69n9qsJ0_SMMR0UBvjw5Pe_2dccseHyNntU1TaHSydnPxec_cpCFNjIn0cuKlO04TC0uatCL6slMVI59MrggVRJlgUV4QyatFmNetzuB-XvpzILG96FdW-r-bqqVdEZS9AjpbJSW6E8qoydOJL3AF-06tHRQ"/>
 </div>
-<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
-<img alt="Pedro Cardenas Promotions Logo" class="w-32 h-32 md:w-40 md:h-40 object-contain" src="./images/PedroC-logo.webp"/>
+<div class="relative z-10 max-w-8xl mx-auto text-center flex flex-col items-center gap-8">
+<img alt="Pedro Cardenas Promotions Logo" class="w-[95vw] max-w-4xl h-auto object-contain drop-shadow-2xl" src="./images/PedroC-logo.webp"/>
 <p class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface-variant">
                     Somos tus expertos en promociones
                 </p>
@@ -342,18 +359,18 @@
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
 <span class="inline-block px-3 py-1 bg-surface-container-highest text-white/80 font-label-bold text-caption rounded mb-3 w-max">Web Design</span>
 <h3 class="font-headline-md text-headline-md text-white mb-2 group-hover:text-primary transition-colors">Hector's Moving</h3>
-<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="#">
+<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="https://hectorandsonsmoving.com/">
                                 Ver Proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Project 2 -->
 <div class="group relative rounded-xl overflow-hidden aspect-[4/5] bg-midnight-surface border border-glass-stroke md:-translate-y-8">
-<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated glass and window installation company website showcased on a high-end desktop monitor. The UI utilizes a deep midnight color palette with striking flame-orange highlights, reflecting premium craftsmanship. The setting is a minimalist design studio with subtle cinematic lighting highlighting the screen." src="./images/glass-website.webp"/>
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated glass and window installation company website showcased on a high-end desktop monitor. The UI utilizes a deep midnight color palette with striking flame-orange highlights, reflecting premium craftsmanship. The setting is a minimalist design studio with subtle cinematic lighting highlighting the screen." src="./images/highdef-website.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
 <span class="inline-block px-3 py-1 bg-surface-container-highest text-white/80 font-label-bold text-caption rounded mb-3 w-max">Web Design</span>
-<h3 class="font-headline-md text-headline-md text-white mb-2 group-hover:text-primary transition-colors">Granda Glass Corp.</h3>
-<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="#">
+<h3 class="font-headline-md text-headline-md text-white mb-2 group-hover:text-primary transition-colors">High Definition Barber Shop</h3>
+<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="https://www.highdefinitionbarbers.com/">
                                 Ver Proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
@@ -364,7 +381,7 @@
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
 <span class="inline-block px-3 py-1 bg-surface-container-highest text-white/80 font-label-bold text-caption rounded mb-3 w-max">Web Design</span>
 <h3 class="font-headline-md text-headline-md text-white mb-2 group-hover:text-primary transition-colors">Castro Pro Painting</h3>
-<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="#">
+<a class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300" href="https://castropropaintingllc.com/">
                                 Ver Proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
@@ -453,4 +470,25 @@
             </p>
 </div>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  // Toggle dropdown on hamburger click
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('hidden');
+    menuIcon.textContent = isOpen ? 'menu' : 'close';
+  });
+
+  // Auto-close menu when a navigation link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuIcon.textContent = 'menu';
+    });
+  });
+</script>
 </body></html>
